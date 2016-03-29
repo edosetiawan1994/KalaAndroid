@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kala.kala.ReminderDetailFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/reminderDetailTitle"
+        android:textStyle="bold"
+        android:id="@+id/reminderDetailTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="left|center" />
+
+    <View
+        android:id="@+id/reminderDivisor"
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_below="@+id/reminderDetailTitle"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:scaleType="fitXY"
+        android:id="@+id/profPic"
+        android:src="@drawable/profilepicture"
+        android:contentDescription="@string/profPicDesc"
+        android:layout_below="@+id/reminderDivisor"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/reminderDetailParticipants"
+        android:textStyle="bold"
+        android:id="@+id/reminderDetailParticipants"
+        android:layout_below="@+id/reminderDivisor"
+        android:layout_toEndOf="@+id/profPic"
+        android:gravity="bottom" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="119 friends and 12k others"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/reminderDetailParticipants"
+        android:layout_toEndOf="@+id/profPic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/reminderDetailDueDate"
+        android:id="@+id/reminderDetailDueDate"
+        android:layout_alignTop="@+id/reminderDivisor"
+        android:layout_toEndOf="@+id/reminderDetailParticipants"
+        android:gravity="center|right"
+        android:layout_above="@+id/reminderDetailNote" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/reminderDetailNote"
+        android:id="@+id/reminderDetailNote"
+        android:layout_below="@+id/profPic"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/commentList">
+
+        <TextView
+            android:id="@+id/commentHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/commentHeader"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:gravity="left|center"
+            android:layout_weight="0.8" />
+
+        <TextView
+            android:id="@+id/commentViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/commentViewAll"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:gravity="center|right"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/commentLayout"
+        android:layout_below="@+id/reminderDetailNote">
+    </ListView>
+</RelativeLayout>

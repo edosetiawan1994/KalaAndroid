@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupUser_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="50dp"
+        android:text="@string/signupUser_TitleText"
+        android:id="@+id/signupUser_TitleText"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/signupUser_Pic"
+        android:background="@drawable/profilepicture"
+        android:onClick="userPictureOnClick"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/signupUser_PicHint"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/signupUser_PicHint"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/signupUser_Pic"
+        android:layout_centerHorizontal="true" />
+
+    <EditText android:id="@+id/signupUser_UsernameHint"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:background="@drawable/textinputborder"
+        android:hint="@string/signupUser_UsernameHint"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/signupUser_PicHint"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/signupUser_DoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/signupUser_DoneButton"
+        android:onClick="doneButtonOnClick"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/signupUser_BackButton"
+        android:layout_alignEnd="@+id/signupUser_UsernameHint" />
+
+    <Button android:id="@+id/signupUser_BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/signupUser_BackButton"
+        android:onClick="backButtonOnClick"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/signupUser_UsernameHint"
+        android:layout_marginBottom="75dp"  />
+
+</RelativeLayout>

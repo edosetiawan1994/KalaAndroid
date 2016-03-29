@@ -1,0 +1,144 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kala.kala.ContactDetail">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:scaleType="fitXY"
+            android:id="@+id/profPic"
+            android:src="@drawable/profilepicture"
+            android:contentDescription="@string/profPicDesc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/contactName"
+            android:textStyle="bold"
+            android:id="@+id/contactName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/profPic"
+            android:gravity="center_vertical" />
+
+        <View
+            android:id="@+id/contactDivisor1"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/contactName"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/contactUsernameText"
+            android:text="@string/contactUsernameText"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/profPic"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/contactUsername"
+            android:text="@string/contactUsername"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/contactUsernameText"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <View android:id="@+id/contactDivisor2"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/contactUsername"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/contactEmailText"
+            android:text="@string/contactEmailText"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/contactDivisor2"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/contactEmail"
+            android:text="@string/contactEmail"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/contactEmailText"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <View android:id="@+id/contactDivisor3"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/contactEmail"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/contactPhoneText"
+            android:text="@string/contactPhoneText"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/contactDivisor3"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/contactPhone"
+            android:text="@string/contactPhone"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/contactPhoneText"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <View android:id="@+id/contactDivisor4"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/contactPhone"
+            android:layout_toEndOf="@+id/profPic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/inviteKala"
+            android:text="@string/inviteKala"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/contactDivisor4"
+            android:layout_toEndOf="@+id/profPic" />
+
+    </RelativeLayout>
+</ScrollView>

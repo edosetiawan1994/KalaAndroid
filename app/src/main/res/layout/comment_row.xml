@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/singleCommentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/singleComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="10dip"
+            android:text="Helloooooooooo bubbles!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_below="@+id/comment_username"
+            android:layout_toEndOf="@+id/comment_profile_picture" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/comment_profile_picture"
+            android:src="@drawable/profilepicturesmall"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="5dp"
+            android:text="@string/comment_user_name"
+            android:textColor="@android:color/primary_text_light"
+            android:id="@+id/comment_username"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/comment_profile_picture" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/reminderTime"
+        android:textColor="@android:color/black"
+        android:id="@+id/reminderTime"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignParentTop="true"
+        android:gravity="fill_horizontal|center_vertical" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:scaleType="fitXY"
+        android:id="@+id/icon"
+        android:src="@drawable/profilepicture"
+        android:contentDescription="@string/profPicDesc"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/reminderTime" />
+    <TextView
+        android:id="@+id/reminderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reminder Name"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/icon"
+        android:gravity="bottom" />
+    <TextView
+        android:id="@+id/reminderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reminder Title"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/reminderName"
+        android:layout_toEndOf="@+id/icon" />
+    <TextView
+        android:id="@+id/reminderNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reminder Note"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:layout_below="@+id/reminderTitle"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_alignBottom="@+id/icon" />
+</RelativeLayout>

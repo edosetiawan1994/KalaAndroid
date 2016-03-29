@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.kala.kala.reminderNewFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="24"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/reminderNewTitle"
+        android:id="@+id/reminderNewTitle"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/reminderNewParticipants"
+        android:id="@+id/reminderNewParticipants"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/reminderNewTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reminderNewDateTimeLayout"
+        android:layout_below="@+id/reminderNewParticipants"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/reminderNewDate"
+            android:id="@+id/reminderNewDate" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/reminderNewTime"
+            android:id="@+id/reminderNewTime" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_margin="10dp"
+        android:hint="Add a note..."
+        android:background="@drawable/textinputborder"
+        android:id="@+id/reminderNewNote"
+        android:layout_below="@+id/reminderNewDateTimeLayout"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/reminderNewPhotos"
+        android:id="@+id/reminderNewPhotos"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/reminderNewNote"/>
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:adjustViewBounds="true"
+        android:text="+"
+        android:scaleType="fitXY"
+        android:id="@+id/reminderNewAddPhotosButton"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/reminderNewPhotos"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/reminderNewMap"
+        android:id="@+id/reminderNewMap"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/reminderNewPhotos"/>
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:adjustViewBounds="true"
+        android:text="+"
+        android:scaleType="fitXY"
+        android:id="@+id/reminderNewAddMapButton"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/reminderNewMap"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
