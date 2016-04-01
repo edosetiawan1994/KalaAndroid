@@ -1,11 +1,6 @@
 package com.kala.kala.Model.Schema.User;
 
-import com.firebase.client.Firebase;
-import com.firebase.client.ServerValue;
 import com.kala.kala.Model.Schema.ModelMap;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Kala on 2/29/16.

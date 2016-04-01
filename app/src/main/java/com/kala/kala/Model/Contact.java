@@ -1,17 +1,15 @@
 package com.kala.kala.Model;
 
-import android.content.ContentResolver;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
-import android.provider.ContactsContract;
 import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.provider.ContactsContract.*;
-import static android.provider.ContactsContract.CommonDataKinds.*;
+import static android.provider.ContactsContract.CommonDataKinds.Phone;
+import static android.provider.ContactsContract.Data;
 
 /**
  * Created by Kala on 3/22/16.

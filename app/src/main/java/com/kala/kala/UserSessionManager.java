@@ -1,11 +1,11 @@
 package com.kala.kala;
 
-import java.util.HashMap;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+
+import java.util.HashMap;
 
 public class UserSessionManager {
 
@@ -81,7 +81,14 @@ public class UserSessionManager {
         return false;
     }
 
+    public boolean loadLoadingScreen(){
+        Intent i = new Intent(_context, LoadingActivity.class);
 
+        // Staring Loading Activity
+        _context.startActivity(i);
+
+        return true;
+    }
 
     /**
      * Get stored session data

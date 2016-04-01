@@ -4,14 +4,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             // should get it from server database
             nameFromServer = "Edo";
             usernameFromServer = "edo1994";
-            emailFromServer = "edo1994@gmail";
+            emailFromServer = "edo1994@gmail.com";
             phoneFromServer = "0812345678";
 
             editor.putInt("picture", R.drawable.images1);

@@ -21,12 +21,12 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:id="@+id/login_UsernameEditText"
+        android:id="@+id/login_EmailEditText"
         android:background="@drawable/textinputborder"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:layout_width="250dp"
-        android:hint="@string/login_UsernameHint"
+        android:hint="@string/login_EmailHint"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:layout_centerVertical="true"
@@ -43,7 +43,7 @@
         android:layout_width="250dp"
         android:padding="10dp"
         android:singleLine="true"
-        android:layout_below="@+id/login_UsernameEditText"
+        android:layout_below="@+id/login_EmailEditText"
         android:layout_centerHorizontal="true" />
 
     <Button
