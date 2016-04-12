@@ -31,41 +31,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ContactInfoActivity"
+            android:name=".Activity.ContactInfoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AccountActivity"
+            android:name=".Activity.AccountActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Activity.LoginActivity"
             android:label="@string/title_activity_login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".Activity.SignupActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ReminderDetailActivity"
+            android:name=".Activity.ReminderDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ReminderNewActivity"
+            android:name=".Activity.ReminderNewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ReminderEditActivity"
+            android:name=".Activity.ReminderEditActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SignupDetailActivity"
+            android:name=".Activity.SignupDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SignupUserActivity"
+            android:name=".Activity.SignupUserActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AccountEditActivity"
+            android:name=".Activity.AccountEditActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ReminderCommentsActivity"
+            android:name=".Activity.ReminderCommentsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoadingActivity"
+            android:name=".Activity.LoadingActivity"
             android:screenOrientation="portrait" />
     </application>
 
